@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./images/Logo.png" class="logo" alt="logo" />
+      </div>
+    </header>
+    <main>
+      <div class="input">
+        <textarea
+          placeholder="Ingresa aquí el texto que deseas encriptar o desencriptar"
+          id="input-text"
+          class="input-text"
+        ></textarea>
+        <div class="input-buttons">
+          <button onclick="encrypt()" id="encrypt" class="in-button">
+            Encriptar
+          </button>
+          <button onclick="decrypt()" id="decrypt" class="in-button">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="output">
+        <div id="output-text" class="output-text">
+          <div class="output-message">
+            <img width="200" height="200" src="./images/Muñeco.png" alt="" />
+            <p>Ningun mensaje fue encontrado</p>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          </div>
+        </div>
+        <div class="output-buttons">
+          <button onclick="copyText()" id="copy" class="out-button">
+            Copiar
+          </button>
+          <button onclick="clearText()" id="clear" class="out-button">
+            Limpiar
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
